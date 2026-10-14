@@ -1,0 +1,19 @@
+<article class="product-card">
+  <div class="product-card-header">
+    <h2>{{ product().name }}</h2>
+    @if (isFeatured()) {
+      <div class="featured">Destacat</div>
+    }
+  </div>
+
+  <p class="category">{{ product().category }}</p>
+  <p class="price">Preu: {{ product().price }} €</p>
+
+  @if (isFree()) {
+    <span class="badge free">Gratuït</span>
+  } @else if (isOffer()) {
+    <span class="badge offer">Oferta</span>
+  } @else if (isPremium()) {
+    <span class="badge premium">Premium</span>
+  }
+</article>

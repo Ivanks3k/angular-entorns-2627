@@ -1,0 +1,7 @@
+.product-card { padding: 1rem; border: 1px solid #e1e6f0; border-radius: 0.75rem; background:#fff }
+.product-card-header { display:flex; justify-content:space-between; align-items:flex-start }
+.featured { background:#e9edff; color:#3449aa; padding:0.25rem 0.45rem; border-radius:999px; font-weight:700 }
+.badge { padding:0.35rem 0.65rem; border-radius:999px; font-weight:700 }
+.free{ background:#e3f7ec; color:#176b3c }
+.offer{ background:#fff1d7; color:#805100 }
+.premium{ background:#f0e9ff; color:#5a35a0 }
