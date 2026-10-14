@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { Product } from '../../interfaces/product';
 
 @Component({
   selector: 'app-tarjeta',
@@ -6,7 +7,7 @@ import { Component, input } from '@angular/core';
   styleUrl: './tarjeta.css',
 })
 export class Tarjeta {
-  protected readonly product = input<{ id: number; name: string; category: string; price: number }>();
+  readonly product = input.required<Product>();
 
   protected isFree() {
     return this.product().price === 0;
